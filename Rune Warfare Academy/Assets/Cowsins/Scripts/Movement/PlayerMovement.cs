@@ -557,9 +557,9 @@ public class PlayerMovement : MonoBehaviour
             if (grounded) rb.velocity = Vector3.zero; 
             return;
         }
-
-        rb.AddForce(orientation.transform.forward * InputManager.y * acceleration * Time.deltaTime * multiplier * multiplierV / multiplier2);
-        rb.AddForce(orientation.transform.right * InputManager.x * acceleration * Time.deltaTime * multiplier / multiplier2);
+            
+            rb.AddForce(orientation.transform.forward * InputManager.y * acceleration * Time.deltaTime * multiplier * multiplierV / multiplier2);
+            rb.AddForce(orientation.transform.right * InputManager.x * acceleration * Time.deltaTime * multiplier / multiplier2);
     }
 
     /// <summary>
