@@ -5,7 +5,7 @@ public class PlayerDashState : PlayerBaseState
 {
 
     public PlayerDashState(PlayerStates currentContext, PlayerStateFactory playerStateFactory,Vector3 inp)
-        : base(currentContext, playerStateFactory) { input = inp;  }
+        : base(currentContext, playerStateFactory) { input = inp; }
 
     private PlayerMovement player;
 
