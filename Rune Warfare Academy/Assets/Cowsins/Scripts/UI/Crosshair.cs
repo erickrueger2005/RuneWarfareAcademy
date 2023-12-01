@@ -63,6 +63,11 @@ namespace cowsins
 
         [SerializeField] private GameObject hitmarkerObj;
 
+        [SerializeField] private Texture2D downPart;
+        [SerializeField] private Texture2D topLeftPart;
+        [SerializeField] private Texture2D topRightPart;
+        [SerializeField] private Texture2D centerPart;
+
         #endregion
 
         private void Awake()
@@ -130,19 +135,19 @@ namespace cowsins
                 || weaponController.weapon != null && weaponController.isAiming && player.weapon.removeCrosshairOnAiming
                 || PauseMenu.Instance != null && PauseMenu.isPaused && hideCrosshairOnPaused
                 || interactManager.inspecting && hideCrosshairOnInspecting) return;
-            Texture2D texture = new Texture2D(1, 1);
+            Texture2D texture = new Texture2D(100, 100);
             texture.SetPixel(0, 0, color);
             texture.wrapMode = TextureWrapMode.Repeat;
             texture.Apply();
 
 
-            if (crosshairShape.parts.downPart) GUI.DrawTexture(new Rect(Screen.width / 2 - width / 2, (Screen.height / 2 - size / 2) + spread / 2, width, size), texture);
+            if (crosshairShape.parts.downPart) GUI.DrawTexture(new Rect(Screen.width / 2 - width / 2, (Screen.height / 2 - size / 2) + spread / 2, width, size), this.downPart);
 
-            if (crosshairShape.parts.topPart) GUI.DrawTexture(new Rect(Screen.width / 2 - width / 2, (Screen.height / 2 - size / 2) - spread / 2, width, size), texture);
+            if (crosshairShape.parts.topPart) GUI.DrawTexture(new Rect(Screen.width / 2 - width / 2, (Screen.height / 2 - size / 2) - spread / 2, width, size), this.topLeftPart);
 
-            if (crosshairShape.parts.rightPart) GUI.DrawTexture(new Rect((Screen.width / 2 - size / 2) + spread / 2, Screen.height / 2 - width / 2, size, width), texture);
+            if (crosshairShape.parts.rightPart) GUI.DrawTexture(new Rect((Screen.width / 2 - size / 2) + spread / 2, Screen.height / 2 - width / 2, size, width), this.topRightPart);
 
-            if (crosshairShape.parts.leftPart) GUI.DrawTexture(new Rect((Screen.width / 2 - size / 2) - spread / 2, Screen.height / 2 - width / 2, size, width), texture);
+            //if (crosshairShape.parts.leftPart) GUI.DrawTexture(new Rect((Screen.width / 2 - size / 2) - spread / 2, Screen.height / 2 - width / 2, size, width), texture);
 
             if (crosshairShape.parts.center)
             {
@@ -150,7 +155,7 @@ namespace cowsins
                 Vector2 center = new Vector2(Screen.width / 2, Screen.height / 2);
                 Rect circleRect = new Rect(center.x - radius, center.y - radius, radius * 2, radius * 2);
 
-                GUI.DrawTexture(circleRect, texture);
+                GUI.DrawTexture(circleRect, this.centerPart);
             }
         }
     }
