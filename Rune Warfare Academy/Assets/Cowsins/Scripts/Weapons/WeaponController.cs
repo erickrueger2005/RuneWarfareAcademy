@@ -867,19 +867,6 @@ public class WeaponController : MonoBehaviour
         }
 
         
-
-        //Crosshair Management
-        // If we dont use a crosshair stop right here
-        if (UIController.instance.crosshair == null)
-        {
-            UIController.instance.crosshair.SpotEnemy(false);
-            return;
-        }
-        // Detect enemies on aiming
-        RaycastHit hit_;
-        if (Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit_, weapon.bulletRange) && hit_.transform.CompareTag("Enemy") || Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit_, weapon.bulletRange) && hit_.transform.CompareTag("Critical"))
-            UIController.instance.crosshair.SpotEnemy(true);
-        else UIController.instance.crosshair.SpotEnemy(false);
     }
     /// <summary>
     /// Procedurally generate the Inventory UI depending on your needs
@@ -926,7 +913,6 @@ public class WeaponController : MonoBehaviour
     {
         canShoot = false;
         selectingWeapon = true;
-        UIController.instance.crosshair.SpotEnemy(false);
         events.OnInventorySlotChanged.Invoke(); // Invoke your custom method
         weapon = null;
         // Spawn the appropriate weapon in the inventory
