@@ -3,7 +3,37 @@ guid: f6a0145e10e309d42ba1ed4ef9f71eab
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Barrel_Baked
+    second: {fileID: 2100000, guid: f3d02e20303dbd44e88032e3c26c78eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body_Baked
+    second: {fileID: 2100000, guid: 6a83641339a8ab94b87e218553d1382b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FirstTrigger_Baked
+    second: {fileID: 2100000, guid: 8f0d434f190cb7246a6356c2b796f30d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ReloadLock_Baked
+    second: {fileID: 2100000, guid: d58bd9a3c5dea4f438a63c188aa7aa47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Safety_Baked
+    second: {fileID: 2100000, guid: e0a86941c79c2274eaba67a15873b9de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SecondTrigger_Baked
+    second: {fileID: 2100000, guid: bcefde051388b6341b40f2a7b28b68d5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

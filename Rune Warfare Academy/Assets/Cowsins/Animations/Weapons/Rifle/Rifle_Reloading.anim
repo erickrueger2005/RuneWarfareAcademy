@@ -6210,8 +6210,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L
+    attribute: m_LocalEulerAngles.z
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6221,37 +6221,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Weapon/Weapon/Body/Shoulder.R
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Weapon/Weapon/Body/Shoulder.R
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6261,97 +6231,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Weapon/Weapon/Body/Shoulder.R
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Weapon/Weapon/Body
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Weapon/Weapon/Body
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Weapon/Weapon/Body
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L/Thumb.L
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L/Thumb.L
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L/Thumb.L
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6391,7 +6271,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Weapon/Weapon/Body/Shoulder.L
+    path: Weapon/Weapon/Body/Shoulder.R
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6401,7 +6281,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Weapon/Weapon/Body/Shoulder.L
+    path: Weapon/Weapon/Body/Shoulder.R
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6411,7 +6291,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Weapon/Weapon/Body/Shoulder.L
+    path: Weapon/Weapon/Body/Shoulder.R
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6421,7 +6301,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6431,7 +6311,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6441,7 +6321,127 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L/Thumb.L
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L/Thumb.L
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Weapon/Weapon/Body/Shoulder.L/UpperArm.L/Elbow.L/Forearm.L/Wrist.L/MetacarpalThumb.L/Thumb.L
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Weapon/Weapon/Body
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Weapon/Weapon/Body
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Weapon/Weapon/Body
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Weapon/Weapon/Body/Shoulder.L
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Weapon/Weapon/Body/Shoulder.L
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Weapon/Weapon/Body/Shoulder.L
     classID: 4
     script: {fileID: 0}
   - curve:

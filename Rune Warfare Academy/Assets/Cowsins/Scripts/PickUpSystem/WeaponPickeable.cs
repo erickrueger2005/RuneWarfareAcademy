@@ -64,8 +64,8 @@ namespace cowsins {
             totalBullets = saveTotalBullets;
 
     #if UNITY_EDITOR
-                UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset = inv.weapon.crosshairPreset;
-                CowsinsUtilities.ApplyPreset(UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset, UIController.instance.crosshair.GetComponent<CrosshairShape>());
+                //UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset = inv.weapon.crosshairPreset;
+               // CowsinsUtilities.ApplyPreset(UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset, UIController.instance.crosshair.GetComponent<CrosshairShape>());
     #endif
                 
                 weapon = oldWeapon;
@@ -106,8 +106,8 @@ namespace cowsins {
     #if UNITY_EDITOR
                     if (inv.weapon != null)
                     {
-                        UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset = inv.weapon.crosshairPreset;
-                        CowsinsUtilities.ApplyPreset(UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset, UIController.instance.crosshair.GetComponent<CrosshairShape>());
+                       // UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset = inv.weapon.crosshairPreset;
+                        //CowsinsUtilities.ApplyPreset(UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset, UIController.instance.crosshair.GetComponent<CrosshairShape>());
                     }
     #endif
 

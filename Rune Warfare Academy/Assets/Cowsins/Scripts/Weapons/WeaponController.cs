@@ -339,7 +339,7 @@ public class WeaponController : MonoBehaviour
     private void HitscanShot()
     {
         events.OnShoot.Invoke();
-        if (resizeCrosshair && UIController.instance.crosshair != null) UIController.instance.crosshair.Resize(weapon.crosshairResize * 100);
+       // if (resizeCrosshair && UIController.instance.crosshair != null) UIController.instance.crosshair.Resize(weapon.crosshairResize * 100);
 
         Transform hitObj;
 
@@ -375,7 +375,7 @@ public class WeaponController : MonoBehaviour
     private void ProjectileShot()
     {
         events.OnShoot.Invoke();
-        if (resizeCrosshair && UIController.instance.crosshair != null) UIController.instance.crosshair.Resize(weapon.crosshairResize * 100);
+        //if (resizeCrosshair && UIController.instance.crosshair != null) UIController.instance.crosshair.Resize(weapon.crosshairResize * 100);
 
         Ray ray = mainCamera.ViewportPointToRay(new Vector3(.5f, .5f, 0f));
         Vector3 destination = (Physics.Raycast(ray, out hit) && !hit.transform.CompareTag("Player")) ? destination = hit.point + CowsinsUtilities.GetSpreadDirection(weapon.spreadAmount, mainCamera) : destination = ray.GetPoint(50f) + CowsinsUtilities.GetSpreadDirection(weapon.spreadAmount, mainCamera);
@@ -931,8 +931,8 @@ public class WeaponController : MonoBehaviour
                     UnHolster(weapon_.gameObject,true);
 
 #if UNITY_EDITOR
-                    UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset = weapon.crosshairPreset;
-                    CowsinsUtilities.ApplyPreset(UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset, UIController.instance.crosshair.GetComponent<CrosshairShape>());
+                   // UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset = weapon.crosshairPreset;
+                   // CowsinsUtilities.ApplyPreset(UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset, UIController.instance.crosshair.GetComponent<CrosshairShape>());
 #endif
                 }
             }
@@ -982,8 +982,8 @@ public class WeaponController : MonoBehaviour
             slots[i].weapon = weapon;
             slots[i].GetImage();
 #if UNITY_EDITOR
-            UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset = weapon.crosshairPreset;
-            CowsinsUtilities.ApplyPreset(UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset, UIController.instance.crosshair.GetComponent<CrosshairShape>());
+            //UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset = weapon.crosshairPreset;
+           // CowsinsUtilities.ApplyPreset(UIController.instance.crosshair.GetComponent<CrosshairShape>().currentPreset, UIController.instance.crosshair.GetComponent<CrosshairShape>());
 #endif
             i++;
         }
