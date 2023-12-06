@@ -176,3 +176,6 @@ public class PlayerStats : MonoBehaviour, IDamageable
     }
 }
 }
+
+// you should kill yourself NOW
+// your live has ZERO purpose
