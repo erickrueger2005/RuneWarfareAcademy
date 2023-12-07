@@ -9,4 +9,9 @@ public class MainManu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Map");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
