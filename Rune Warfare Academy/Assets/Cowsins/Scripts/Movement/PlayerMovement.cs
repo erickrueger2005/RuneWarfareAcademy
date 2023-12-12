@@ -328,11 +328,13 @@ public class PlayerMovement : MonoBehaviour
 
     [Tooltip("Default field of view of your camera"), Range(1, 179)] public float normalFOV;
 
-    [Tooltip("Running field of view of your camera"), Range(1, 179)] public float runningFOV;
+    [Tooltip("Running field of view boost of your camera"), Range(1, 179)][SerializeField] public float runFOVBoost;
+    [NonSerialized]public float runningFOV;
 
-    [Tooltip("Wallrunning field of view of your camera"), Range(1, 179)] public float wallrunningFOV;
+    [Tooltip("Wall running field of view boost of your camera"), Range(1, 179)][SerializeField] public float wallrunFOVBoost;
+    [NonSerialized] public float wallrunningFOV;
 
-    [Tooltip("Fade Speed - Start Transition for the field of view")] public float fadeInFOVAmount;
+        [Tooltip("Fade Speed - Start Transition for the field of view")] public float fadeInFOVAmount;
 
     [Tooltip("Fade Speed - Finish Transition for the field of view")] public float fadeOutFOVAmount;
 
@@ -343,11 +345,19 @@ public class PlayerMovement : MonoBehaviour
         }
         [SerializeField] private Sounds sounds;
 
-    #endregion
+        #endregion
 
-    private void Awake() => GetAllReferences();
+        private void Awake() { GetAllReferences();
+            normalFOV = PlayerPrefs.GetFloat("fov");
+            runningFOV = normalFOV + runFOVBoost;
+            wallrunningFOV = normalFOV + wallrunFOVBoost;
+        }
+
     private void Start()
     {
+        normalFOV = PlayerPrefs.GetFloat("fov");
+        runningFOV = normalFOV + runFOVBoost;
+        wallrunningFOV = normalFOV + wallrunFOVBoost;
 
         playerScale = transform.localScale;
         canRun = true;

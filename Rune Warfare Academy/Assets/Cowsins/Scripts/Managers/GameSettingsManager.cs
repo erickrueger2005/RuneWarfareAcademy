@@ -37,6 +37,7 @@ public class GameSettingsManager : MonoBehaviour
         // Handle UI Elements for the Settings Menu
         frameRateDropdown.onValueChanged.AddListener(delegate
         {
+            Debug.Log("change saved");
             maxFrameRate = OnDropDownChanged(frameRateDropdown);
         });
         resolutionRateDropdown.onValueChanged.AddListener(delegate
@@ -73,6 +74,7 @@ public class GameSettingsManager : MonoBehaviour
         PlayerPrefs.SetInt("res", res);
         PlayerPrefs.SetInt("fullScreen", fullScreen);
         PlayerPrefs.SetInt("maxFrameRate", maxFrameRate);
+            Debug.Log(PlayerPrefs.GetInt("maxFrameInt"));
         PlayerPrefs.SetInt("vsync", vsync);
         PlayerPrefs.SetInt("graphicsQuality", graphicsQuality);
         PlayerPrefs.SetFloat("masterVolume",masterVolume);
@@ -140,15 +142,15 @@ public class GameSettingsManager : MonoBehaviour
     }
     public int OnDropDownChanged(TMP_Dropdown dropDown)
     {
-        return dropDown.value;
+            return dropDown.value;
     }
     public int OnDropDownChanged(UnityEngine.UI.Toggle toggle)
     {
-        return toggle.isOn ? 1 : 0;
+            return toggle.isOn ? 1 : 0;
     }
     public float OnDropDownChanged(UnityEngine.UI.Slider slider)
     {
-        return slider.value;
+            return slider.value;
     }
 
     private void ChangedActiveScene(Scene current, Scene next)

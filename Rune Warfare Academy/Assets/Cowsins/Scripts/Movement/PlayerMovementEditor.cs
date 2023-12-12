@@ -59,11 +59,11 @@ public class PlayerMovementEditor : Editor
                     EditorGUILayout.LabelField("CAMERA", EditorStyles.boldLabel);
                     GUILayout.Box("", new GUILayoutOption[] { GUILayout.ExpandWidth(true), GUILayout.Height(8) });
                     EditorGUILayout.PropertyField(serializedObject.FindProperty("normalFOV"));
-                    EditorGUILayout.PropertyField(serializedObject.FindProperty("runningFOV"));
+                    EditorGUILayout.PropertyField(serializedObject.FindProperty("runFOVBoost"));
                     if (myScript.canWallRun)
                     {
                         EditorGUI.indentLevel++;
-                        EditorGUILayout.PropertyField(serializedObject.FindProperty("wallrunningFOV"));
+                        EditorGUILayout.PropertyField(serializedObject.FindProperty("wallrunFOVBoost"));
                         EditorGUI.indentLevel--;
                     }
                     EditorGUILayout.PropertyField(serializedObject.FindProperty("fadeInFOVAmount"));

@@ -17,7 +17,7 @@ namespace cowsins
             movement = player.GetComponent<PlayerMovement>();
             weapon = player.GetComponent<WeaponController>();
 
-            baseFOV = cam.fieldOfView; // Initialize baseFOV once in Start
+            baseFOV = movement.normalFOV; // Initialize baseFOV once in Start
         }
 
         private void Update()
