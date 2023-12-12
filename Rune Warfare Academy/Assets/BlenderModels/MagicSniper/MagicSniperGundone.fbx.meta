@@ -3,7 +3,22 @@ guid: d89e19f36dc9f9641968395af7a2e727
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BodySniper_Baked
+    second: {fileID: 2100000, guid: c21b546529722544685d5c9b86c43b01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MagSniper_Baked
+    second: {fileID: 2100000, guid: 1cb4fa7c4938aa54c927aab57b60d45e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TriggerSniper_Baked.001
+    second: {fileID: 2100000, guid: 570ee3efc45a29a4d8010aeaad89cc5a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
