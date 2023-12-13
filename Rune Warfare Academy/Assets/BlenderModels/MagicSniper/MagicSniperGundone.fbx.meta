@@ -17,6 +17,26 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Runes-removebg-preview.008
+    second: {fileID: 2100000, guid: 3878188674dad584fbd90e9acdfef0a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Runes-removebg-preview.009
+    second: {fileID: 2100000, guid: 5035a3f2e07028a4d9d58059b1ead3a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Runes-removebg-preview.010
+    second: {fileID: 2100000, guid: 56035ad82ef942243be81d097901a42a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Runes-removebg-preview.011
+    second: {fileID: 2100000, guid: 7d5976611df097742952e2ef20cd9483, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: TriggerSniper_Baked.001
     second: {fileID: 2100000, guid: 570ee3efc45a29a4d8010aeaad89cc5a, type: 2}
   materials:
