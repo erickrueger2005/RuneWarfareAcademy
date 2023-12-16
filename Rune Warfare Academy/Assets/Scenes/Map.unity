@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -822,7 +822,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 24321e70b09292841b737956b7e3a2b5, type: 2}
     - target: {fileID: 4400094704599717741, guid: 194bd0c13f7dce0419516a453078ad3a, type: 3}
       propertyPath: initialWeapons.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4400094704599717741, guid: 194bd0c13f7dce0419516a453078ad3a, type: 3}
       propertyPath: initialWeapons.Array.data[0]
@@ -831,7 +831,7 @@ PrefabInstance:
     - target: {fileID: 4400094704599717741, guid: 194bd0c13f7dce0419516a453078ad3a, type: 3}
       propertyPath: initialWeapons.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: ab27882dfc21cb645abc50e673def266, type: 2}
+      objectReference: {fileID: 11400000, guid: 6dcf542676ad38b46bc0e22fa05cbcc5, type: 2}
     - target: {fileID: 4400094704599717749, guid: 194bd0c13f7dce0419516a453078ad3a, type: 3}
       propertyPath: jumpForce
       value: 700
