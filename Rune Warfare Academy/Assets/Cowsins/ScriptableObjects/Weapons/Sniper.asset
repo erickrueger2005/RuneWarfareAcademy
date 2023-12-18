@@ -31,12 +31,12 @@ MonoBehaviour:
   explosionForce: 0
   explosionVFX: {fileID: 0}
   continuousFire: 0
-  fireRate: 0.8
+  fireRate: 3
   reloadTime: 2.5
   coolSpeed: 0
   cooledPercentageAfterOverheat: 0
   infiniteBullets: 0
-  magazineSize: 15
+  magazineSize: 5
   bulletsPerFire: 1
   ammoCostPerFire: 1
   bulletRange: 100
@@ -44,17 +44,17 @@ MonoBehaviour:
   penetrationAmount: 10
   penetrationDamageReduction: 0.579
   allowAim: 1
-  aimingPosition: {x: -0.236, y: 0.097, z: -0.23}
+  aimingPosition: {x: -0.2365, y: 0.097, z: -0.3}
   aimingRotation: {x: 0, y: 0, z: 0}
-  aimingSpeed: 30
-  aimingFOV: 30
+  aimingSpeed: 10
+  aimingFOV: 20
   movementSpeedWhileAiming: 6
   setMovementSpeedWhileAiming: 1
   crosshairResize: 40
   crosshairPreset: {fileID: 2655988077585873504, guid: c578889a819b05c4aacc11a6abb692ac, type: 2}
   applyBulletSpread: 1
   applyWeight: 1
-  spreadAmount: 0.015
+  spreadAmount: 0
   aimSpreadAmount: 0
   weightMultiplier: 1
   applyRecoil: 1
@@ -139,12 +139,12 @@ MonoBehaviour:
   applyDifferentRecoilOnAiming: 0
   xRecoilAmountOnAiming: 0
   yRecoilAmountOnAiming: 0
-  damagePerBullet: 4
+  damagePerBullet: 10
   applyDamageReductionBasedOnDistance: 0
   minimumDistanceToApplyDamageReduction: 0
   damageReductionMultiplier: 0
   criticalDamageMultiplier: 1.5
-  limitedMagazines: 1
+  limitedMagazines: 0
   totalMagazines: 2
   showBulletShells: 1
   bulletHoleImpact:
