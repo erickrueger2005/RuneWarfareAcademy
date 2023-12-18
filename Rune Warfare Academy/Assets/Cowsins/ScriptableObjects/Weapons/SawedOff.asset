@@ -47,7 +47,7 @@ MonoBehaviour:
   aimingPosition: {x: -0.32, y: 0.24, z: -0.4}
   aimingRotation: {x: 0, y: 0, z: 0}
   aimingSpeed: 10
-  aimingFOV: 30
+  aimingFOV: 60
   movementSpeedWhileAiming: 6
   setMovementSpeedWhileAiming: 1
   crosshairResize: 40

@@ -58,7 +58,7 @@ namespace cowsins
                 || weaponController.weapon != null && weaponController.isAiming && player.weapon.removeCrosshairOnAiming
                 || PauseMenu.Instance != null && PauseMenu.isPaused && hideCrosshairOnPaused
                 || interactManager.inspecting && hideCrosshairOnInspecting) return;
-            GUI.DrawTexture(new Rect(Screen.width / 2 - crosshair.width/2, Screen.height / 2 - crosshair.height/2, crosshair.width, crosshair.height), crosshair);
+            GUI.DrawTexture(new Rect(Screen.width / 2 - crosshair.width/2, Screen.height / 2 - crosshair.height/2 +3, crosshair.width, crosshair.height), crosshair);
         }
     }
 }
