@@ -18,6 +18,7 @@ namespace cowsins {
 /// </summary>
 public class UIController : MonoBehaviour
 {
+
     private InteractManager intManager;
 
     public PlayerMovement playerMovement; 
@@ -27,6 +28,11 @@ public class UIController : MonoBehaviour
     [Tooltip("Use text to display player statistics.")] public bool numericHealthDisplay;
 
     private Action<float, float> healthDisplayMethod;
+
+    RectTransform DashVis;
+
+    int DashAmountCurrent = 0;
+    float DashVisualLerpThing = 0f;
 
     [Tooltip("Slider that will display the health on screen"), SerializeField] private Slider healthSlider;
 
@@ -101,11 +107,14 @@ public class UIController : MonoBehaviour
 
     public Crosshair crosshair;
 
+    
+
     public static UIController instance { get; set; }
 
     private void Awake()
     {
-        instance = this;    
+        instance = this;
+        DashVis = GameObject.Find("DashFill").GetComponent<RectTransform>();
     }
     private void Start()
     {
@@ -116,6 +125,10 @@ public class UIController : MonoBehaviour
     }
     private void Update()
     {
+        DashVisualLerpThing = Mathf.Lerp(DashVisualLerpThing, (float)DashAmountCurrent, 8f * Time.deltaTime);
+        DashVis.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 29.4275f * DashVisualLerpThing);
+        DashVis.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 45.375f);
+
         if (healthStatesEffect.color != new Color(healthStatesEffect.color.r,
             healthStatesEffect.color.g,
             healthStatesEffect.color.b, 0)) healthStatesEffect.color -= new Color(0, 0, 0, Time.deltaTime * fadeOutTime);
@@ -304,12 +317,15 @@ public class UIController : MonoBehaviour
     /// </summary>
     private void DrawDashUI(int amountOfDashes)
     {
+        DashAmountCurrent = amountOfDashes;
+
         dashElements = new List<GameObject>(amountOfDashes);
         int i = 0;
         while (i < amountOfDashes)
         {
             var uiElement = Instantiate(dashUIElement, dashUIContainer);
             dashElements.Add(uiElement.gameObject);
+         
             i++;
         }
     }
@@ -319,6 +335,7 @@ public class UIController : MonoBehaviour
         // Enable a new UI Element
         var uiElement = Instantiate(dashUIElement, dashUIContainer);
         dashElements.Add(uiElement.gameObject);
+        DashAmountCurrent++;
     }
 
     private void DashUsed(int currentDashes)
@@ -327,6 +344,7 @@ public class UIController : MonoBehaviour
         var element = dashElements[currentDashes];
         dashElements.Remove(element);
         Destroy(element);
+        DashAmountCurrent--;
     }
 
     // WEAPON    /////////////////////////////////////////////////////////////////////////////////////////
